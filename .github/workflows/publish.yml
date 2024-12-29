@@ -15,6 +15,13 @@ jobs:
       id-token: write
     steps:
       # retrieve your distributions here
+      - name: Check out repo
+        uses: actions/checkout@v3
+
+      - name: Build and upload dist
+        run: |
+          pip install build
+          python -m build
 
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
