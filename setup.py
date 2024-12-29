@@ -2,7 +2,7 @@ from pathlib import Path
 
 import setuptools
 
-VERSION = "1.1.0"  # PEP-440
+VERSION = "1.3.0"  # PEP-440
 
 NAME = "gsheets-connector"
 
